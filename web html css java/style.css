@@ -1,0 +1,116 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "roboto", sans-serif;
+}
+
+.fContainer {
+    display: flex;
+   /* justify-content: center;
+    align-items: center;*/
+    width: 100%;
+    height: 100vh;
+    background-color: orange;
+
+}
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    padding: 15px;
+    width: 100%;
+    height: 50px;
+    background-color: #222;
+    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.5);
+}
+.brand {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5em;
+    padding: 15px;
+    text-transform: capitalize;
+}
+.firstname {
+    color: white;
+    font-weight: 700;
+}
+.lastname {
+    color: crimson;
+    font-weight: 400px;
+    padding-left: 4px;
+
+}
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigation>li {
+    list-style-type: none;
+    padding: 15px;
+
+}
+.navigation>li>a {
+    color: aliceblue;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.navigation>li>a:hover {
+    color:crimson;
+    transition: all .3s ease-in-out;
+}
+.navigation>li>img {
+    width:50px; /* Atur lebar gambar */
+    height: 50px;
+    border-radius: 50px;
+}
+.navigation>li>img:hover {
+    width:65px;
+    height: 65px; /* Atur tinggi gambar */
+    border-radius: 65px; /*untuk membuat bacgrun menjadi bulat yang back ground merahnya*/
+}
+
+.active {
+    background-color: crimson;
+    color: white;
+    padding: 12px;
+    border-radius: 15px;
+
+}
+.bottom-menu {
+    text-align: center;
+    justify-content: space-between;
+    font-size: 20px;
+    background-color: olivedrab; /* Warna latar belakang */
+    color: white; /* Warna teks */
+    padding: 35px; /*penempatan tex Padding atas dan bawah */
+    position: fixed;
+    bottom: 70%; /*atur tata letak menu yang ada di tengah*/
+    width: 100%;
+}
+.bottom-menu ul {
+    list-style: none; /* Menghilangkan bullet point pada list */
+    padding: 0;
+    
+}
+
+.bottom-menu ul li {
+    display: inline-block;
+    margin: 0 10px; /* Memberi jarak antar menu */
+}
+
+.bottom-menu ul li a {
+    color: white; /* Warna teks pada tautan */
+    text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+    font-size: 25px;/*untuk perbesar atau perkecil tex*/
+    padding: 10px;
+    border-radius: 10%;  /* Membuat gambar menjadi lingkaran */
+    color: white;
+    background-color: crimson;
+    
+}
+.bottom-menu ul li a:hover{
+    color:crimson;
+}
